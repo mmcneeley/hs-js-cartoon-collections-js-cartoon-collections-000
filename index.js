@@ -28,6 +28,7 @@ function findTheCheese (foods) {
     if (cheese.indexOf(foods[i]) != -1) {
       return cheese[cheese.indexOf(foods[i])];
     }
+    // if i didn't want to use indexOf, I would add another for loop rotating through cheese array to see if foods[i] was === to any of the cheese[p]
   }
   return "no cheese!";
 }
