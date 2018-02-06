@@ -1,6 +1,7 @@
 function dwarfRollCall(dwarves) {
   var string = "";
-	for (var i = 0; i < dwarves.length; i++) {
+  var halfDwarf = dwarves.length / 2
+	for (var i = halfDwarf; i < drawves.length ; i++) {
 		string = string + `${i + 1}. ${dwarves[i]} `;
 	}
 	return string;
@@ -34,12 +35,9 @@ function findTheCheese (foods) {
 }
 
 function wordsWithB (words) {
-// take in words, return words with b 
-// "apple, banana, stawberry" return bann
-// "Banana".startsWith()
   var wordsB = [];
   for (var i = 0; i < words.length; i++) {
-    if (words[i].startsWith("b")) {wordsB.push(words[i])}
+    if (words[i].startsWith("b") || words[i].startsWith("B")) {wordsB.push(words[i])}
   }
   return wordsB;
 }
