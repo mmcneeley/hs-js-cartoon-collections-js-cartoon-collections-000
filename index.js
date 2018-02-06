@@ -23,7 +23,7 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese (foods) {
-  var cheese = ["cheddar", "gouda", "camembert"];
+  var cheese = ["cheddar", "gouda", "camembert", "swiss"];
   for (var i = 0; i < foods.length; i++) {
     if (cheese.indexOf(foods[i]) != -1) {
       return cheese[cheese.indexOf(foods[i])];
@@ -31,4 +31,15 @@ function findTheCheese (foods) {
     // if i didn't want to use indexOf, I would add another for loop rotating through cheese array to see if foods[i] was === to any of the cheese[p]
   }
   return "no cheese!";
+}
+
+function wordsWithB (words) {
+// take in words, return words with b 
+// "apple, banana, stawberry" return bann
+// "Banana".startsWith()
+  var wordsB = [];
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].startsWith("b")) {wordsB.push(words[i])}
+  }
+  return wordsB;
 }
